@@ -2,17 +2,17 @@
 <rss version="2.0">
     <channel>
         <title>Education DAO Blog</title>
-        <link>https://education-dao.xyz/DAOdocs/blog</link>
+        <link>https://education-dao.xyz/educationdao.xyz/blog</link>
         <description>Education DAO Blog</description>
-        <lastBuildDate>Tue, 16 Jan 2024 15:45:42 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 16 Jan 2024 15:59:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
             <title><![CDATA[Education DAO Announcements]]></title>
-            <link>https://education-dao.xyz/DAOdocs/blog/index</link>
-            <guid>https://education-dao.xyz/DAOdocs/blog/index</guid>
-            <pubDate>Tue, 16 Jan 2024 15:45:42 GMT</pubDate>
+            <link>https://education-dao.xyz/educationdao.xyz/blog/index</link>
+            <guid>https://education-dao.xyz/educationdao.xyz/blog/index</guid>
+            <pubDate>Tue, 16 Jan 2024 15:59:13 GMT</pubDate>
         </item>
     </channel>
 </rss>
