@@ -4,7 +4,7 @@
         <title>Education DAO Blog</title>
         <link>https://education-dao.xyz/blog</link>
         <description>Education DAO Blog</description>
-        <lastBuildDate>Thu, 18 Jan 2024 03:00:39 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Jan 2024 03:07:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Education DAO Announcements]]></title>
             <link>https://education-dao.xyz/blog/index</link>
             <guid>https://education-dao.xyz/blog/index</guid>
-            <pubDate>Thu, 18 Jan 2024 03:00:39 GMT</pubDate>
+            <pubDate>Thu, 18 Jan 2024 03:07:10 GMT</pubDate>
         </item>
     </channel>
 </rss>
