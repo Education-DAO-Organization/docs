@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkeducation_docs=self.webpackChunkeducation_docs||[]).push([[354],{2844:e=>{e.exports=JSON.parse('{"permalink":"/educationdao.xyz/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
