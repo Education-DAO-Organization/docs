@@ -11,7 +11,8 @@ const FeatureList = [
     description: (
       <>
        <div>
-      <iframe src="https://paragraph.xyz/@education-dao" style={{ width: '90vw', height: '80vh'}} title="Updates from Education DAO via paragraph.xyz" ></iframe>
+      <iframe src="https://paragraph.xyz/@education-dao" style={{ width: '60vw', height: '80vh', display: 'flex',
+    align: 'center' }} title="Updates from Education DAO via paragraph.xyz" ></iframe>
       </div>
         <ReactMarkdown>{Why}</ReactMarkdown>
       </>
