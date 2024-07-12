@@ -8,15 +8,15 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Education DAO',
+  title: 'Education DAO documentation',
   tagline: 'Preserve and maintain the collective knowledge of web3, sustainably',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://educationdao.xyz',
+  url: 'https://education-dao-organization.github.io/educationdao.xyz/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/educationdao.xyz/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
