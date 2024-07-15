@@ -2,7 +2,6 @@
 
 This course assumes a baseline of technical knowledge. It is important to make sure you are comfortable with the following tech. If you are not, we are providing links to excellent resources you can use to get up to speed! Please note that you can learn all these things in our free [Basic Training course.](https://courses.consensys.net/courses/bootcamp-basic-training)
 
-- [Technical Requirements](#technical-requirements)
   - [Unix or Linux Environments](#unix-or-linux-environments)
   - [Command Line](#command-line)
   - [Git](#git)

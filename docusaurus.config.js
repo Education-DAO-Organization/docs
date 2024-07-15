@@ -59,6 +59,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      customCss: require.resolve('./src/css/custom.css'),
       image: 'img/education-dao-animated-logo.svg',
       navbar: {
         title: 'EducationDAO',

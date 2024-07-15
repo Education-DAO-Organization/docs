@@ -15,10 +15,8 @@
   --ifm-color-primary-light: #867abf;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #A798EF;
   --ifm-color-primary-dark: #1a1a1a;
@@ -30,7 +28,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='light'] {
   --ifm-color-primary: #A798EF;
   --ifm-color-primary-dark: #1a1a1a;
@@ -117,9 +114,12 @@
   }
 }
 
-/* landing page content */
-
-.col {
-  width: 20vw;
+/* Center content on the homepage */
+.homepage .container {
   text-align: center;
+}
+
+/* Left-align text for articles */
+.docPage .markdown {
+  text-align: left;
 }
