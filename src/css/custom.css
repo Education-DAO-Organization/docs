@@ -123,3 +123,8 @@
   width: 20vw;
   text-align: center;
 }
+
+/* Left-align text for articles */
+.docPage .container {
+  text-align: left;
+}
