@@ -4,7 +4,7 @@ In this lesson, we're going to walkthrough setting up a development environment 
 
 As we've discussed before, optimistic rollups offer an easier path to scaling in certain situations since they leverage much of the same toolkit as EVM development. Out of the box, Arbitrum supports [Solidity](https://developer.offchainlabs.com/solidity-support) as well as [Truffle, Hardhat, The Graph, etc.](https://developer.offchainlabs.com/getting-started-devs) You can see the differences between Ethereum and Arbitrum [here.](https://developer.offchainlabs.com/arb-specific-things)
 
-Like Optimism, Arbitrum's consensus layer is a dispute-based one, using a process called interactive challenges. With the release of Arbitrum Nitro, the newest iteration of the Arbitrum Optimistic Rollup protocol, the Validator set (those able to pose challenges) is whitelisted. Over time, Arbitrum intends to remove the whitelist and open validation to everyone. 
+Like Optimism, Arbitrum's consensus layer is a dispute-based one, using a process called interactive challenges. With the release of Arbitrum Nitro, the newest iteration of the Arbitrum Optimistic Rollup protocol, the Validator set (those able to pose challenges) is whitelisted. Over time, Arbitrum intends to remove the whitelist and open validation to everyone.
 
 Bridging between Arbitrum and Mainnet is live, and the Arbitrum documentation has some information for how to implement bridging in your project. See the current capabilities [here.](https://developer.offchainlabs.com/asset-bridging)
 
@@ -17,7 +17,7 @@ The requirements and setup for Arbitrum are very similar to the previous lesson 
 - Node.js 10.x or later
 - NPM version 5.2 or later
 - [docker](https://docs.docker.com/get-docker/), version 19.03.12 or later
-[docker-compose](https://docs.docker.com/compose/install/), version 1.27.3 or later
+  [docker-compose](https://docs.docker.com/compose/install/), version 1.27.3 or later
 - Recommended Docker memory allocation of >=8 GB.
 
 You'll also need to setup an Arbitrum project on your Infura account. You don't have to update your account, right now access is being offered at the "core" level for free up to 100,000 daily requests. You must enable the Arbitrum Rollup ADD-ON under the billing section under Manage Add-Ons in your Infura account Settings for the API requests to work properly. When setting up your project, be sure to select the "Ethereum" network. Then, under settings, select the "Arbitrum Goerli" testnet, as shown below:
@@ -38,8 +38,7 @@ Let's get started! (For more detail, you can find the tutorial this lesson is ba
 
 From a new directory, `unbox` the Arbitrum box:
 
-```truffle unbox arbitrum```
-
+`truffle unbox arbitrum`
 
 You will need at least one mnemonic to use with the network. The `.dotenv` npm package has been installed for you, and you will need to create a `.env` file for storing your mnemonic and any other needed private information.
 
@@ -78,21 +77,17 @@ To compile your Arbitrum contracts, run the following in your terminal:
 npm run compile:arbitrum
 ```
 
-This script lets Truffle know to use the `truffle-config.arbitrum.js` configuration file, which tells Truffle where to store your build artifacts. When adding new contracts to compile, you may find some discrepancies and errors, so please remember to keep an eye on [differences between ethereum and Arbitrum](https://developer.offchainlabs.com/arb-specific-things){target=_blank}.
+This script lets Truffle know to use the `truffle-config.arbitrum.js` configuration file, which tells Truffle where to store your build artifacts. When adding new contracts to compile, you may find some discrepancies and errors, so please remember to keep an eye on [differences between ethereum and Arbitrum](https://developer.offchainlabs.com/arb-specific-things).
 
 ## Migration
 
 Now that we've compiled the contract for Arbitrum, we can migrate it to the Arbitrum Nitro Layer 2 network. First, let's just try to our local Ganache, which will be almost similar to a normal Ethereum ganache instance:
 
-
-```npm run migrate:arbitrum --network=ganache```
-
+`npm run migrate:arbitrum --network=ganache`
 
 This may be a bit underwhelming! However, if we have loaded in our Infura Arbitrum Goerli network endpoint and have enough Arbitrum Goerli ETH in the wallet tied to the `.env` mnemonic, we can also run:
 
-
-```npm run migrate:arbitrum --network=arbitrum_testnet```
-
+`npm run migrate:arbitrum --network=arbitrum_testnet`
 
 Like standard Truffle, if you would like to migrate previously migrated contracts on the same network, you can run `truffle migrate --config truffle-config.arbitrum.js --network=(arbitrum_local | arbitrum_goerli | arbitrum_mainnet)` and add the `--reset` flag if you have previously run these migrations.
 
@@ -101,5 +96,6 @@ Following the above steps should allow you to deploy to the Arbitrum Layer 2 cha
 Furthermore, keep an eye out for new developments in Truffle tooling to assist with bridging L1-L2 data and execution.
 
 ## Additional Material
+
 - [Docs: Arbitrum Quickstart](https://developer.offchainlabs.com/docs/developer_quickstart)
 - [Tutorial: Truffle's Pet Shop Box on Arbitrum](https://github.com/OffchainLabs/arbitrum-tutorials/tree/master/packages/demo-dapp-pet-shop)

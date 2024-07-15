@@ -3,10 +3,11 @@
 
 Before we go further, let's start our React app by running the follow command inside our client directory:
 
+```bash
     npm install @drizzle/store
 
     npm start
-
+```
 
 This will serve the front-end under `localhost:3000` so open that up in your browser.
 
@@ -45,6 +46,7 @@ And finally, we created the drizzleStore and used that to create our drizzle ins
 
 Once that is complete, your index.js should look something like this:
 
+```JSX
     import React from 'react';
     import ReactDOM from 'react-dom';
     import './index.css';
@@ -54,6 +56,7 @@ Once that is complete, your index.js should look something like this:
     import drizzle functions and contract artifact
     import { Drizzle, generateStore } from "@drizzle/store";
     import MyStringStore from "./contracts/MyStringStore.json";
+```
 
     let drizzle know what contracts we want and how to access our test blockchain
 
@@ -78,6 +81,7 @@ Once that is complete, your index.js should look something like this:
 Note again that the drizzle instance is passed into the App component as props.
 
 # Drizzle Components
+
 Drizzle maintains a library of React components for commonly used dapp functions. For example, generating input forms for contracts.
 Components
 
@@ -85,13 +89,16 @@ Components
 
 This components wraps your entire app (but within the DrizzleProvider) and will show a loading screen until Drizzle, and therefore web3 and your contracts, are initialized.
 
+```bash
     loadingComp (component) 
 The component displayed while Drizzle intializes.
 
     errorComp (component) 
 The component displayed if Drizzle initialization fails.
+```
 
 ## ContractData
+```bash
     contract(string, required)
 Name of the contract to call.
 
@@ -109,9 +116,11 @@ Converts the return value to a UTF-8 string before display.
 
     toAscii (boolean) 
 Converts the return value to an Ascii string before display.
+```
 
 ## ContractForm
 
+```bash
     contract (string, required)
 Name of the contract whose method will be the basis the form.
 
@@ -123,3 +132,4 @@ An object specifying options for the transaction to be sent; namely: from, gasPr
 
     labels (array) 
 Custom labels; will follow ABI input ordering. Useful for friendlier names. For example "_to" becoming "Recipient Address".
+```

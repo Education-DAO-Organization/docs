@@ -1,8 +1,9 @@
 # Intro to Scalability
 
-Ethereum gas fees have risen astronomically as the network becomes more popular. The ability of retail investors to participate in new Ethereum-based offerings like DeFi is circumscribed by the ever-increasing cost of entry into the space. 
+Ethereum gas fees have risen astronomically as the network becomes more popular. The ability of retail investors to participate in new Ethereum-based offerings like DeFi is circumscribed by the ever-increasing cost of entry into the space.
 
 Three main challenges presented by the success of mainnet Ethereum:
+
 1. Spiking gas costs <b>price-out market share and impact user experience.</b> Best case is loss of low-value transactions and poor UX due to stuck transactions. Worst case is compromising healthy market operation like [Black Thursday.](https://insights.glassnode.com/what-really-happened-to-makerdao/)
 2. <b>Block Latency</b> is problematic in some applications
 3. Pushing gas costs to users creates friction and impacts user experience. User has to navigate rather <b>complex effects.</b>
@@ -23,7 +24,7 @@ In this section, we'll typically refer to mainnet Ethereum as Layer 1 or L1 and 
 
 ## Conclusion
 
-These are exciting and very new topics, please be aware that they are considered *very* cutting edge and you should be extremely careful when using them. 
+These are exciting and very new topics, please be aware that they are considered _very_ cutting edge and you should be extremely careful when using them.
 
 Most of the protocols that are live on mainnet have made some compromises around decentralization and security, and it is important to be aware whether their risk profile matches your risk appetite. A good resource for learning more about particular solutions is <a href="l2beat.com" target="_blank"> L2 Beat </a>. Also, please know that the documentation changes very regularly and perhaps not perceptibly. If you're currently building on a Layer 2 solution, we recommend joining the project's Discord, or wherever the community gathers, and making sure to follow their developer updates.
 
