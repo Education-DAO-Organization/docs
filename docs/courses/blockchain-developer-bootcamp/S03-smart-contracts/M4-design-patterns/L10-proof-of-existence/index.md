@@ -44,7 +44,10 @@ To install truffle
 
     $ npm install -g truffle
 
-<span style="background-color: rgb(209, 213, 216);">`$ npm install -g @truffle/hdwallet-provider`</span>
+```bash
+$ n
+pm install -g @truffle/hdwallet-provider`</span>
+```
 
 Create a project directory and set up truffle
 
@@ -110,7 +113,9 @@ In the terminal output you should see that Truffle compiled `ProofOfExistence.so
 
 Truffle remembers which contracts it has migrated to the network. So, if the contract has not changed and we want to run the migration again on the same network, we need to use the `--reset` option like so:
 
+```bash
     $ truffle migrate --reset
+```
 
 You can find more information about truffle migrations [here](https://truffleframework.com/docs/truffle/getting-started/running-migrations).
 
