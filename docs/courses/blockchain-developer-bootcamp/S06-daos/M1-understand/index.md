@@ -53,7 +53,7 @@ You can use tools and services by [BlockScience](https://block.science/) like [C
 
 ### Community Tokens, Social Tokens and Creator Economies
 
-Some level of social capital can be captured into a social token or community token. A good [breakdown of both can be found here](<https://medium.com/open-source-x/what-are-social-tokens-f594f1ae3e76#:~:text=%E2%9D%B7%20Community%20Tokens%20%E2%80%94%20issued%20and,decentralized%20autonomous%20organization%20(DAO){target=_blank}.&text=Something%20similar%20to%20this%20happened,influencers%20hyped%20dubious%20token%20projects.>).
+Some level of social capital can be captured into a social token or community token. A good [breakdown of both can be found here](<https://medium.com/open-source-x/what-are-social-tokens-f594f1ae3e76#:~:text=%E2%9D%B7%20Community%20Tokens%20%E2%80%94%20issued%20and,decentralized%20autonomous%20organization%20(DAO).&text=Something%20similar%20to%20this%20happened,influencers%20hyped%20dubious%20token%20projects.>).
 
 Learn about [social tokens and how DAOs](https://newsletter.banklesshq.com/p/the-bull-case-for-social-tokens) help enable them. Listen to [a16z’s perspective on social tokens](https://future.a16z.com/podcasts/nfts-creator-economy/) with Kevin Chou from [Rally](https://rally.io/). Rally is like WordPress for social tokens. Another platform can be [Fyooz](https://www.fyooz.io/).
 
@@ -89,7 +89,7 @@ Learn more about the latest DAO developments at [DAOTalk.org](https://daotalk.or
 Read more about DAOs [via DAOHaus](https://app.daohaus.club/explore) or [Aragon's list of DAO in 15 different industries](https://blog.aragon.org/15-ways-the-world-is-being-transformed-by-daos/).
 
 ## Additional Resources
-- [Article: Organizational Legos, The State of DAO Tooling (Nichanan Kesonpat)](https://medium.com/1kxnetwork/organization-legos-the-state-of-dao-tooling-866b6879e93e){target=_blank} Excellent overview of available tooling for DAOs from Fall 2021
+- [Article: Organizational Legos, The State of DAO Tooling (Nichanan Kesonpat)](https://medium.com/1kxnetwork/organization-legos-the-state-of-dao-tooling-866b6879e93e) Excellent overview of available tooling for DAOs from Fall 2021
 
-- [Whitepaper: Decentralized Autonomous Organizations: Beyond the Hype (World Economic Forum)](https://www3.weforum.org/docs/WEF_Decentralized_Autonomous_Organizations_Beyond_the_Hype_2022.pdf){target_blank}A comprehnisve resource to learn everything in depth  about DAO's, right from understanding what is a DAO and how it works to its legal and regulatory challenges.
+- [Whitepaper: Decentralized Autonomous Organizations: Beyond the Hype (World Economic Forum)](https://www3.weforum.org/docs/WEF_Decentralized_Autonomous_Organizations_Beyond_the_Hype_2022.pdf) A comprehnisve resource to learn everything in depth  about DAO's, right from understanding what is a DAO and how it works to its legal and regulatory challenges.
 

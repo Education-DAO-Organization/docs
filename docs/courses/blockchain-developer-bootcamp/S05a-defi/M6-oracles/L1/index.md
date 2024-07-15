@@ -53,5 +53,5 @@ You can use TheGraph and ChainLink described [Chainlink's description](https://w
 - [The Importance of Data Quality for DeFi Smart Contracts](https://blog.chain.link/the-importance-of-data-quality-for-defi/)
 - [Flash Loans and Tamper Proof Oracles](https://blog.chain.link/flash-loans-and-the-importance-of-tamper-proof-oracles/)
 - [TheGraph Academy](https://thegraph.academy/) -[GraphQL tutorial via EggHead.io](https://egghead.io/q/graphql)
-- [Article: Chainlink basic request model tutorial](https://igudar.medium.com/chainlink-local-development-truffle-ganache-kubernetes-185a8cc2fda0){target=_blank} Tutorial demonstrating Chainlink basic request model locally using truffle,ganache , solidity and kubernetes.
-- [Article: Chainlink decentralized data model tutorial](https://igudar.medium.com/chainlink-decentralized-data-model-truffle-rinkeby-kubernetes-ec90802bd259){target=_blank} Deep dive tutorial on Chainlink decentralized data feed.
+- [Article: Chainlink basic request model tutorial](https://igudar.medium.com/chainlink-local-development-truffle-ganache-kubernetes-185a8cc2fda0) Tutorial demonstrating Chainlink basic request model locally using truffle,ganache , solidity and kubernetes.
+- [Article: Chainlink decentralized data model tutorial](https://igudar.medium.com/chainlink-decentralized-data-model-truffle-rinkeby-kubernetes-ec90802bd259) Deep dive tutorial on Chainlink decentralized data feed.

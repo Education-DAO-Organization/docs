@@ -18,7 +18,7 @@ The Rayonism testnet did run for a short period of time. You can checkout the Me
 
 ## Additional Materials
 - [Video: What Happens after ETH1 and ETH2 merge? (Vitalik Buterin)](https://youtu.be/pG8DPW64f-A)
-- [Write-up from Merge Workshop in October 2021](https://consensys.net/blog/ethereum-2-0/an-update-on-the-merge-after-the-amphora-interop-event-in-greece/){target=_blank}
+- [Write-up from Merge Workshop in October 2021](https://consensys.net/blog/ethereum-2-0/an-update-on-the-merge-after-the-amphora-interop-event-in-greece/)
 - [Forum: A Rollup-centric Ethereum Roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)
 - [GitHub: Mainnet Readiness Checklist](https://github.com/ethereum/pm/blob/master/Merge/mainnet-readiness.md)
 - [GitHub: Eth1 and Eth2 Merge spec](https://github.com/ethereum/consensus-specs/blob/dev/specs/merge/beacon-chain.md)

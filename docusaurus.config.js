@@ -1,10 +1,5 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -26,9 +21,6 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -40,18 +32,22 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Education-DAO-organization/educationdao.xyz',
-        },
+          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/docs', // Change this to a non-root path
+          include: ['**/*.md', '**/*.mdx'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+          includeCurrentVersion: true,
+        },        
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Education-DAO-organization/educationdao.xyz',
+          editUrl: 'https://github.com/Education-DAO-organization/educationdao.xyz',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -63,7 +59,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/education-dao-animated-logo.svg',
       navbar: {
         title: 'EducationDAO',
@@ -74,18 +69,18 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'docSidebar', // Updated to match the actual sidebar id
             position: 'left',
             label: 'Explore',
           },
-          {to: '/Blog', label: 'News', position: 'left'},
+          { to: '/blog', label: 'News', position: 'left' },
           {
             href: 'https://github.com/Education-DAO-Organization/',
             label: 'GitHub',
             position: 'right',
           },
         ],
-      },
+      },      
       footer: {
         style: 'dark',
         links: [
