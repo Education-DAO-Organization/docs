@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeducation_docs=self.webpackChunkeducation_docs||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/educationdao.xyz/blog","blogTitle":"Blog"}')}}]);

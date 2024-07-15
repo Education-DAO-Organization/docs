@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeducation_docs=self.webpackChunkeducation_docs||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Education DAO Announcements","permalink":"/educationdao.xyz/blog/index","unlisted":false}]}')}}]);
