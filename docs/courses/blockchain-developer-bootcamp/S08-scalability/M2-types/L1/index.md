@@ -1,16 +1,14 @@
 # Types of Scaling Solutions
 
-Several options have been proposed and worked on for scaling Ethereum on a shorter time frame. Some of these efforts are coming to fruition now and are worth considering. The main tradeoffs for choosing a scaling solution involve considerations of <b>throughput</b> vs. <b>security</b> vs. <b>usability</b>. The following are some solutions currently in the works at various stages: 
-
+Several options have been proposed and worked on for scaling Ethereum on a shorter time frame. Some of these efforts are coming to fruition now and are worth considering. The main tradeoffs for choosing a scaling solution involve considerations of <b>throughput</b> vs. <b>security</b> vs. <b>usability</b>. The following are some solutions currently in the works at various stages:
 
 :::note
 Note: This section draws heavily on the work on Faina Shalts, engineer at Truffle (and Bootcamp alumni!) as well as from [Ethereum.org](https://ethereum.org/en/developers/docs/scaling/)
 :::
 
-
 ## Rollups
 
-In general, on Rollup Layer 2 solutions,  transactions are submitted to L2 nodes instead of L1, and batched. Eventually they are put on L1 and no longer mutable. L2 nodes are Ethereum compatible, independent blockchains. All state and execution is handled in L2: Signature verification, Contract execution, etc. The L1 only stores transaction data. 
+In general, on Rollup Layer 2 solutions, transactions are submitted to L2 nodes instead of L1, and batched. Eventually they are put on L1 and no longer mutable. L2 nodes are Ethereum compatible, independent blockchains. All state and execution is handled in L2: Signature verification, Contract execution, etc. The L1 only stores transaction data.
 
 Note: the terminology here can be challenging but Pranay Mohan of Celo Network [proposes](https://mobile.twitter.com/pranaymohan/status/1409195144360992773) we think of rollups as shard clients and the rollup contracts as on-chain light clients.
 
@@ -32,7 +30,7 @@ Optimistic Roll-ups are currently being built by [Optimistic PBC,](https://optim
 
 ### Zero-Knowledge / ZK-Rollups
 
-As we mentioned earlier in the section on Zero-Knowledge proofs, ZKPs can compress a larger amount of computation or verification into a single operation. ZK-Rollups bundle hundreds of transfers that occur on the ZKP Rollup L2 into a single L1, mainnet transaction via a smart contract located on L1. From the data submitted the smart contract can verify all the transfers that are included. 
+As we mentioned earlier in the section on Zero-Knowledge proofs, ZKPs can compress a larger amount of computation or verification into a single operation. ZK-Rollups bundle hundreds of transfers that occur on the ZKP Rollup L2 into a single L1, mainnet transaction via a smart contract located on L1. From the data submitted the smart contract can verify all the transfers that are included.
 
 The main benefit over an Optimistic rollup is that you get finality much faster, usually within a couple of hours though it could be made faster still at an increased gas price.
 
@@ -41,16 +39,16 @@ Critically, you don’t need all the data to verify the transactions, just the z
 - **Pros** Minimal delay, less vulnerable to economic attacks
 - **Cons** Currently available ZK-Rollup chains are not compatible with the EVM as validity proofs are intense to compute and have to build their own language to process. However, there is some work on building Solidity to ZKP language transpilers, like [this one for Cairo,](https://medium.com/nethermind-eth/warp-your-way-to-starknet-ddd6856875e0) Starknet's ZKP language. There is also ongoing work to create EVM-compatible Zk-Rollups.
 
-We're seeing the emergence of two major types of ZK Rollups: Those that run their own VM (virtual machine) and those that are EVM compatible. 
+We're seeing the emergence of two major types of ZK Rollups: Those that run their own VM (virtual machine) and those that are EVM compatible.
 
 #### Non-EVM ZK-Rollups
 
 [StarkNet](https://starknet.io/) is the best example of a ZK Rollup that uses its own virtual machine, called the StarkNet OS. StarkNet uses the Cairo programming language both for its infrastructure and for writing StarkNet contracts.
 
-- **Pros** 
-  - Cairo language logic is converted to STARK proofs, enabling a significant increase of throughput. 
-  - Cairo also allows for a new paradigm, "provable computation" , allowing programs to prove they have been executed without having to be re-run. *This is a key technological advancement in the blockchain space and allows for really interesting applications like private transactions or complicated logic that doesn't need to be re-run in full to update the Ethereum state).* 
-  - StarkNet is efficient, fast, and very scalable. 
+- **Pros**
+  - Cairo language logic is converted to STARK proofs, enabling a significant increase of throughput.
+  - Cairo also allows for a new paradigm, "provable computation" , allowing programs to prove they have been executed without having to be re-run. _This is a key technological advancement in the blockchain space and allows for really interesting applications like private transactions or complicated logic that doesn't need to be re-run in full to update the Ethereum state)._
+  - StarkNet is efficient, fast, and very scalable.
   - StarkNet is already live on mainnet and the ecosystem is growing quickly. [ Infura recently released initial StarkNet support ](https://blog.infura.io/post/starknet-now-available-to-all-infura-users)
 - **Cons**
   - Learning a new smart contract language can be challenging.
@@ -61,11 +59,11 @@ Luckily, it is also possible to use StarkNet with Solidity, by employing a [tran
 
 #### EVM Compatible ZK-Rollups: The Elusive zkEVM
 
-ZK Rollups that are EVM compatible are a complicated effort, largely because the Ethereum Virtual Machine was built to optimize bytecode manipulation, while ZK proofs require mathematical manipulation to perform their function. 
+ZK Rollups that are EVM compatible are a complicated effort, largely because the Ethereum Virtual Machine was built to optimize bytecode manipulation, while ZK proofs require mathematical manipulation to perform their function.
 
-Over the past several months multiple zkEVM solutions have made headway but we are still waiting to see one on mainnet. The most notable zkEVM projects at this time are [ Scroll ](https://scroll.io/), [zkSync ](https://zksync.io/) (going live Oct 2022), and [ Polygon Hermez](https://polygon.technology/solutions/polygon-hermez/). 
+Over the past several months multiple zkEVM solutions have made headway but we are still waiting to see one on mainnet. The most notable zkEVM projects at this time are [ Scroll ](https://scroll.io/), [zkSync ](https://zksync.io/) (going live Oct 2022), and [ Polygon Hermez](https://polygon.technology/solutions/polygon-hermez/).
 
-- **Pros** 
+- **Pros**
   - Once live, zkEVM solutions will allow the best of all worlds: Zero-Knowledge proofs and Ethereum/Solidity compatibility.
 - **Cons**
   - There are currently no live solutions on mainnet. zkSync seems as though it will be first to mainnet but it is unlikely that it will be a fully EVM-compatible solution initially. Be wary of marketing gimmicks around EVM compatibility!
@@ -87,6 +85,7 @@ Sidenote: State channels on Ethereum can be enforced through a concept known as 
 On Ethereum, you can use the [CREATE2](https://solidity-by-example.org/app/create2/) opcode to predetermine the address of a contract. This means you can make these commitments in a channel and, if you need to dispute something, either party can deploy that contract with the chain of valid commitments.
 
 State Channel pros and cons (from [Ethereum.org](https://ethereum.org/en/developers/docs/scaling/state-channels/)):
+
 - <b>Pros</b> Instant withdrawal/settling on mainnet, high throughput, lower cost per transaction
 - <b>Cons</b> Time and cost to set up and settle a channel. Funds must be locked up, participants need to periodically watch the network. Channels don’t support open participation.
 
@@ -100,13 +99,14 @@ We'll discuss this more in the crosschain and interoperability section, but esse
 
 ![Diagram Showing Sidechains](../../../img/S08/sidechain-simple-1.png)
 
-Examples of sidechains are [SKALE](https://skale.network/) and [xDai.](https://www.xdaichain.com/) 
+Examples of sidechains are [SKALE](https://skale.network/) and [xDai.](https://www.xdaichain.com/)
 
 ## Conclusion
 
 This concludes our overview of the kinds of scaling solutions available to us. It is by no means comprehensive, since the field is rapidly evolving. In the next section, we'll provide a basic rubric by which you can judge any Layer 2 or general scaling solution.
 
 ## Additional Material
+
 - [Wiki: Scaling (Ethereum.org)](https://ethereum.org/en/developers/docs/scaling/) Great overview of the topic, including the "pros and cons" of different solutions
 - [Video: Layer 2 Scaling Explained (Finematics)](https://youtu.be/BgCgauWVTs0)
 - [Dashboard: L2beat](https://l2beat.com/) A research and network dashboard showing the current level of activity on different networks.
@@ -117,9 +117,10 @@ This concludes our overview of the kinds of scaling solutions available to us. I
 - [Video: How Layer 2 Addresses Barriers for Enterprise Building on Mainnet](https://www.youtube.com/watch?v=8bbBpa8usfk&t=272s)
 
 ### Rollups
+
 - [Article: An Incomplete Guide to Rollups (Vitalik Buterin)](https://vitalik.ca/general/2021/01/05/rollup.html) A follow-up article to Buterin's [post on eth.research](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698) entitled, "What would a rollup-centric ethereum roadmap look like?" and [here's a video version](https://www.youtube.com/watch?v=wcCHlqgGSH4) of the article.
 - [Research: Compressing Data Using Rollups](https://ethresear.ch/t/rollup-diff-compression-application-level-compression-strategies-to-reduce-the-l2-data-footprint-on-l1/9975) A technical discussions around optimizing data compression for Rollups
-[Thread: Rollup verification](https://mobile.twitter.com/bkiepuszewski/status/1411725611958247429) A great walkthrough about how rollups conduct verification and how that verification can make it to Layer 1
+  [Thread: Rollup verification](https://mobile.twitter.com/bkiepuszewski/status/1411725611958247429) A great walkthrough about how rollups conduct verification and how that verification can make it to Layer 1
 - [Article: (Almost) Everything You Need to Know About Optimistic Rollup (Paradigm)](https://research.paradigm.xyz/rollups) Really good technical overview of optimistic rollup tech
 - [Artilce: Arbitrum in under 10 minutes](https://tracer.finance/radar/arbitrum-in-under-10/) An explainer of Arbitrum, an optimistic rollup.
 - [Video: Scaling Ethereum with Rollups](https://www.youtube.com/watch?v=l4jccXoqLGM) John Adler from Fuel Labs discusses the concepts behind optimistic rollups
@@ -128,15 +129,12 @@ This concludes our overview of the kinds of scaling solutions available to us. I
 - [ StarkWare Website With Details on StarkNet and Cairo ](https://starkware.co/tech-stack/)
 - [ Website Providing Details On Currently Available Rollup Solutions](https://l2beat.com/scaling/tvl/)
 - [ Article: Vitalik on zkEVMs ](https://vitalik.ca/general/2022/08/04/zkevm.html)
-    
 
 ### State Channels
+
 - [Article: State Channel Basics](https://education.district0x.io/general-topics/understanding-ethereum/basics-state-channels/)
 - [Article: Generalized State Channels on Ethereum](https://medium.com/statechannels/counterfactual-generalized-state-channels-on-ethereum-d38a36d25fc6) Goes into more detail about counterfactual instantiation.
 - [Article: State Channels](https://www.jeffcoleman.ca/state-channels/) Basic overview of the technology from 2015. Good evergreen concepts here.
 - [Article Series: A State Channels Adventure](https://medium.com/spankchain/a-state-channels-adventure-with-counterfactual-rick-part-1-ce68e16252ea) A potentially NSFW walkthrough of the physics behind counterfactual instantiation.
 - [Tutorial: Precompute Contract Addresses with CREATE2](https://solidity-by-example.org/app/create2/) A great code tutorial from Solidity by Example showing how to find a predetermined address for a contract, the backbone of counterfactual instantiation.
 - [Code Demo: Web3 Torrent](https://blog.statechannels.org/introducing-web3torrent/) A Proof of Concept from StateChannels.org, a torrenting network built using state channels (or a subset of state channels they call [virtual channels](https://blog.statechannels.org/virtual-channels/)).
-
-
-
