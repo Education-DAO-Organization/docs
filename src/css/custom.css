@@ -125,6 +125,6 @@
 }
 
 /* Left-align text for articles */
-.docPage .container {
+.docPage .container .article {
   text-align: left;
 }
