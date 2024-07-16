@@ -9,9 +9,7 @@ _Have suggestions you'd like to see on the list? [Edit this page here!](https://
 ## Twitter
 
 *   [Twitter Lists from Aftab Hossain (DCinvestor)](https://twitter.com/iamDCinvestor/lists)
-*   [@ConsensysAcad](https://twitter.com/consensysacad)
 *   [Twitter List from John Brennan](https://twitter.com/i/lists/1240026040619106306?s=20)
-*   [@ConsenSys](https://twitter.com/consensys)
 *   [Basecamp's list of blockchain Cultural Figures](https://www.notion.so/2438c01d787b4dfd8ba3352011f194ff?v=0e065bfd666b4bc4a27216301faf1de1&p=eb0a863295a24191a6eb78a026347381) Go through this list and follow them!
 
 ## Reddit
